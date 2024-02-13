@@ -2,15 +2,32 @@
   "env": {
     "commonjs": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "browser": true
   },
-  "extends": "airbnb-base",
+  "extends": [
+    "airbnb-base",
+    "plugin:markdown/recommended",
+    "plugin:json/recommended"
+  ],
+  "plugins": ["markdown"],
   "parserOptions": {
     "ecmaVersion": "latest"
   },
   "rules": {
+    "no-console": "warn",
     "import/no-extraneous-dependencies": "off",
     "quotes": ["error", "backtick"],
     "indent": "error"
-  }
+  },
+  "overrides": [
+    {
+        "files": ["**/*.md"],
+        "processor": "markdown/markdown"
+    },
+    {
+        "files": ["**/*.md/*.js"],
+        "rules": {}
+    }
+]
 }

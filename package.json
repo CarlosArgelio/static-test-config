@@ -8,12 +8,12 @@
     "prepare": "husky"
   },
   "repository": {
-    "type": "git",
+      "type": "git",
     "url": "git+https://github.com/CarlosArgelio/static-test-config.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Carlos A Palacios R",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CarlosArgelio/static-test-config/issues"
   },
@@ -23,11 +23,17 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-markdown": "^3.0.1",
     "husky": "^9.0.10",
     "lint-staged": "^15.2.2",
     "prettier": "3.2.5"
   },
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=20.5.1",
+    "npm": ">=9.8.0"
   }
 }
