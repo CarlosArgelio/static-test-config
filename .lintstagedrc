@@ -1,9 +1,12 @@
 {
-  "{**/*,*}.js": [
+  "*.js": [
     "prettier --write --ignore-unknown",
     "eslint --fix"
   ],
-  "{**/*,*}.{json,.yaml,.yml}": [
+  "*.json": [
+    "eslint --ext .json . --fix"
+  ],
+  "**/serverless.yaml": [
     "npm run lint:updated && npm run prettier-check:updated"
   ]
 }
