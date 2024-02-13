@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
+  // hello
   "repository": {
-    "type": "git",
+    "type": 42,
     "url": "git+https://github.com/CarlosArgelio/static-test-config.git"
   },
   "keywords": [],

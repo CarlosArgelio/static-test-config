@@ -5,7 +5,7 @@
     "node": true,
     "browser": true
   },
-  "extends": ["airbnb-base", "plugin:markdown/recommended"],
+  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc"],
   "plugins": ["markdown"],
   "parserOptions": {
     "ecmaVersion": "latest"
@@ -14,7 +14,12 @@
     "no-console": "warn",
     "import/no-extraneous-dependencies": "off",
     "quotes": ["error", "backtick"],
-    "indent": "error"
+    "indent": "error",
+    "jsonc/no-comments": "off"
+    // "jsonc/indent": ["error",
+    //     4,
+    //     {}
+    // ]
   },
   "overrides": [
     {
@@ -24,6 +29,10 @@
     {
       "files": ["**/*.md/*.js"],
       "rules": {}
+    },
+    {
+      "files": ["*.json"],
+      "parser": "jsonc-eslint-parser"
     }
   ]
 }

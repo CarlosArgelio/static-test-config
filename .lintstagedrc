@@ -2,5 +2,8 @@
   "*.js": [
     "prettier --write --ignore-unknown",
     "eslint --fix"
+  ],
+  "*.json": [
+    "eslint --ext .json . --fix"
   ]
 }
