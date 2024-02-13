@@ -4,6 +4,6 @@
     "eslint --fix"
   ],
   "{**/*,*}.{json,.yaml,.yml}": [
-    "eslint --ext .json,.yaml,.yml . --fix"
+    "npm run lint:updated && npm run prettier-check:updated"
   ]
 }
