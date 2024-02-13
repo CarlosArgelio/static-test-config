@@ -6,7 +6,7 @@
   "*.json": [
     "eslint --ext .json . --fix"
   ],
-  "**/serverless.yaml": [
+  "serverless.yaml": [
     "npm run lint:updated && npm run prettier-check:updated"
   ]
 }
