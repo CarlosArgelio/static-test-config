@@ -1,5 +1,4 @@
 package-lock.json
-package.json
 # eslint ignores hidden files by default
 !.*.json
 **/node_modules

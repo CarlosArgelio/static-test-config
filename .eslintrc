@@ -5,7 +5,7 @@
     "node": true,
     "browser": true
   },
-  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc"],
+  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc", "plugin:yml/standard"],
   "plugins": ["markdown"],
   "parserOptions": {
     "ecmaVersion": "latest"
@@ -24,13 +24,18 @@
       "processor": "markdown/markdown"
     },
     {
-      "files": ["**/*.md/*.js"],
-      "rules": {}
+      "files": ["**/*.md/*.js"]
     },
     {
       "files": ["*.json"],
-      "parser": "jsonc-eslint-parser",
-      "rules": {}
+      "parser": "jsonc-eslint-parser"
+    },
+    {
+      "files": ["*.yaml", "*.yml"],
+      "parser": "yaml-eslint-parser",
+      "parserOptions": {
+        "defaultYAMLVersion": "1.2"
+      }
     }
   ]
 }

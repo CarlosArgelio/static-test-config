@@ -1,9 +1,9 @@
 {
-  "*.js": [
+  "{**/*,*}.js": [
     "prettier --write --ignore-unknown",
     "eslint --fix"
   ],
-  "*.json": [
-    "eslint --ext .json . --fix"
+  "{**/*,*}.{json,.yaml,.yml}": [
+    "eslint --ext .json,.yaml,.yml . --fix"
   ]
 }
