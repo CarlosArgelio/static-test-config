@@ -42,5 +42,9 @@
   "engines": {
     "node": ">=20.5.1",
     "npm": ">=9.8.0"
+  },
+  "eslintConfig": {
+    "extends": "@serverless/eslint-config/node",
+    "root": true
   }
 }

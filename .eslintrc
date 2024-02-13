@@ -5,8 +5,7 @@
     "node": true,
     "browser": true
   },
-  "root": true,
-  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc", "@serverless/eslint-config/node"],
+  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc"],
   "plugins": ["markdown"],
   "parserOptions": {
     "ecmaVersion": "latest"
