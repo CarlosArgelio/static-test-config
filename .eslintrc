@@ -16,7 +16,7 @@
     "quotes": ["error", "backtick"],
     "indent": "error",
     "jsonc/auto": "error",
-    "comma-style": ["error", "last"],
+    "jsonc/comma-dangle": ["error", "never"]
   },
   "overrides": [
     {
@@ -30,6 +30,7 @@
     {
       "files": ["*.json"],
       "parser": "jsonc-eslint-parser",
+      "rules": {}
     },
   ],
 }
