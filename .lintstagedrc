@@ -1,6 +1,6 @@
 {
   "*.js": [
     "prettier --write --ignore-unknown",
-    "eslint"
+    "eslint --fix"
   ]
 }
