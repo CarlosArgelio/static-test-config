@@ -6,7 +6,7 @@
     "browser": true
   },
   "root": true,
-  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc", "plugin:yml/standard", "@serverless/eslint-config/node"],
+  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc", "@serverless/eslint-config/node"],
   "plugins": ["markdown"],
   "parserOptions": {
     "ecmaVersion": "latest"
@@ -30,13 +30,6 @@
     {
       "files": ["*.json"],
       "parser": "jsonc-eslint-parser"
-    },
-    {
-      "files": ["*.yaml", "*.yml"],
-      "parser": "yaml-eslint-parser",
-      "parserOptions": {
-        "defaultYAMLVersion": "1.2"
-      }
     }
   ]
 }
