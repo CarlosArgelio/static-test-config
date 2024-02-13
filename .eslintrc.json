@@ -1,38 +1,38 @@
 {
-  "env": {
-    "commonjs": true,
-    "es2021": true,
-    "node": true,
-    "browser": true
-  },
-  "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc"],
-  "plugins": ["markdown"],
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
-  "rules": {
-    "no-console": "warn",
-    "import/no-extraneous-dependencies": "off",
-    "quotes": ["error", "backtick"],
-    "indent": "error",
-    "jsonc/no-comments": "off"
-    // "jsonc/indent": ["error",
-    //     4,
-    //     {}
-    // ]
-  },
-  "overrides": [
-    {
-      "files": ["**/*.md"],
-      "processor": "markdown/markdown"
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true,
+        "browser": true
     },
-    {
-      "files": ["**/*.md/*.js"],
-      "rules": {}
+    "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc"],
+    "plugins": ["markdown"],
+    "parserOptions": {
+        "ecmaVersion": "latest"
     },
-    {
-      "files": ["*.json"],
-      "parser": "jsonc-eslint-parser"
-    }
-  ]
+    "rules": {
+        "no-console": "warn",
+        "import/no-extraneous-dependencies": "off",
+        "quotes": ["error", "backtick"],
+        "indent": "error",
+        "jsonc/no-comments": "off",
+        "jsonc/indent": ["error",
+            4,
+            {}
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["**/*.md"],
+            "processor": "markdown/markdown"
+        },
+        {
+            "files": ["**/*.md/*.js"],
+            "rules": {}
+        },
+        {
+            "files": ["*.json"],
+            "parser": "jsonc-eslint-parser"
+        }
+    ]
 }
