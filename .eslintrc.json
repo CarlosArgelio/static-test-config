@@ -16,6 +16,7 @@
     "quotes": ["error", "backtick"],
     "indent": "error",
     "jsonc/auto": "error",
+    "comma-style": ["error", "last"],
   },
   "overrides": [
     {
