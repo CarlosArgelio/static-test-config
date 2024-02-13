@@ -3,12 +3,12 @@
     "commonjs": true,
     "es2021": true,
     "node": true,
-    "browser": true,
+    "browser": true
   },
   "extends": ["airbnb-base", "plugin:markdown/recommended", "plugin:jsonc/recommended-with-jsonc"],
   "plugins": ["markdown"],
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": "latest"
   },
   "rules": {
     "no-console": "warn",
@@ -21,16 +21,16 @@
   "overrides": [
     {
       "files": ["**/*.md"],
-      "processor": "markdown/markdown",
+      "processor": "markdown/markdown"
     },
     {
       "files": ["**/*.md/*.js"],
-      "rules": {},
+      "rules": {}
     },
     {
       "files": ["*.json"],
       "parser": "jsonc-eslint-parser",
       "rules": {}
-    },
-  ],
+    }
+  ]
 }
