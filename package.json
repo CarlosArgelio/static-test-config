@@ -8,7 +8,7 @@
     "prepare": "husky"
   },
   "repository": {
-      "type": "git",
+        "type": "git",
     "url": "git+https://github.com/CarlosArgelio/static-test-config.git"
   },
   "keywords": [],
