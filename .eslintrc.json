@@ -5,11 +5,7 @@
     "node": true,
     "browser": true
   },
-  "extends": [
-    "airbnb-base",
-    "plugin:markdown/recommended",
-    "plugin:json/recommended"
-  ],
+  "extends": ["airbnb-base", "plugin:markdown/recommended"],
   "plugins": ["markdown"],
   "parserOptions": {
     "ecmaVersion": "latest"
@@ -22,12 +18,12 @@
   },
   "overrides": [
     {
-        "files": ["**/*.md"],
-        "processor": "markdown/markdown"
+      "files": ["**/*.md"],
+      "processor": "markdown/markdown"
     },
     {
-        "files": ["**/*.md/*.js"],
-        "rules": {}
+      "files": ["**/*.md/*.js"],
+      "rules": {}
     }
-]
+  ]
 }

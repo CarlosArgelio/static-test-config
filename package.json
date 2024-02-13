@@ -8,7 +8,7 @@
     "prepare": "husky"
   },
   "repository": {
-      "type": "git",
+    "type": "git",
     "url": "git+https://github.com/CarlosArgelio/static-test-config.git"
   },
   "keywords": [],
@@ -23,7 +23,6 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-markdown": "^3.0.1",
     "husky": "^9.0.10",
     "lint-staged": "^15.2.2",
