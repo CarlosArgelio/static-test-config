@@ -1,4 +1,3 @@
 {
-  "eslint.validate": ["javascript", "javascriptreact", "json", "jsonc", "json5"],
-  "serverlessIDE.validate": true
+  "eslint.validate": ["javascript", "javascriptreact", "json", "jsonc", "json5"]
 }
